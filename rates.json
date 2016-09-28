@@ -30,12 +30,12 @@
             "from_kg": 50,
             "to_kg": 100,
             "price": 25.89
-        }, ],
-        "over": {
+        }, {
             "from_kg": 100,
+            "to_kg": 5000,
             "every_kg": 50,
             "price": 13.11
-        }
+        }]
     },
     "price_scs": {
         "ranges": [{
@@ -66,16 +66,24 @@
             "from_kg": 50,
             "to_kg": 100,
             "price": 2.94
-        }],
-        "over": {
+        }, {
             "from_kg": 100,
+            "to_kg": 5000,
             "every_kg": 50,
             "price": 8.19
-        }
+        }]
     },
     "fuel_surcharge": {
-        "from_price": 10,
-        "percentage": 1.5
+        "ranges": [{
+            "from_value": 0,
+            "to_value": 10,
+            "price": 0.0
+        }, {
+            "from_value": 10,
+            "to_value": 50000,
+            "extra_percentage": 1.5,
+            "price": 0.0
+        }]
     },
     "weight_volume_ratio_kg": 220,
     "insurance": {
@@ -95,8 +103,7 @@
             "from_value": 1549.37,
             "to_value": 2582.28,
             "price": 8.43
-        }],
-        "max_value": 2582.28,
+        }]
     },
     "countersign": {
         "ranges": [{
@@ -108,7 +115,6 @@
             "to_value": 999.99,
             "extra_percentage": 2.5,
             "price": 2.48
-        }],
-        "max_value": 999.99,
+        }]
     }
 }
